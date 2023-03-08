@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "367560784787",
+    "project_id": "currencytoday-a80db",
+    "storage_bucket": "currencytoday-a80db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367560784787:android:f8787b472c914d7efd4666",
+        "android_client_info": {
+          "package_name": "com.example.currencytoday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367560784787-jq9c813fqqpb3df1ihrhrpajl4uih5ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvd0bRNgpnR32UTmLhlO4cLvJGRss_22o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367560784787-jq9c813fqqpb3df1ihrhrpajl4uih5ho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

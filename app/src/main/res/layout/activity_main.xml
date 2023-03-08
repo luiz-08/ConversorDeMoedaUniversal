@@ -8,11 +8,74 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.431"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="159dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toTopOf="@+id/spTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spFrom"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/setar" />
+
+    <Spinner
+        android:id="@+id/spTo"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/spFrom" />
+
+    <EditText
+        android:id="@+id/etValueFrom"
+        android:layout_width="224dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:hint="Digite o valor aqui"
+        android:inputType="number"
+        android:labelFor="@+id/etValueFrom"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTo"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="343dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/btConvert"
         android:layout_width="222dp"
         android:layout_height="54dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:text="Converter"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -25,7 +88,7 @@
         android:id="@+id/textView4"
         android:layout_width="224dp"
         android:layout_height="50dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="144dp"
         android:text="Valor atual:"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -37,63 +100,11 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="343dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="8dp"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:text="Conversor de moeda Universal"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="99dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="159dp"
-        android:layout_height="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/spTo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spFrom"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/setar" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="344dp"
         android:text="De :"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -102,21 +113,23 @@
         tools:ignore="MissingConstraints" />
 
     <Spinner
-        android:id="@+id/spTo"
+        android:id="@+id/spFrom"
         android:layout_width="116dp"
         android:layout_height="40dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="344dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.009"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/spFrom" />
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="67dp"
         android:layout_height="40dp"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="108dp"
         android:text="Para :"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -124,30 +137,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/etValueFrom"
-        android:layout_width="224dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="36dp"
-        android:inputType="number"
-        android:text="Digite o valor aqui"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="Conversor de moeda Universal"
         android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spTo"
-        tools:ignore="MissingConstraints,UnknownId" />
-
-    <Spinner
-        android:id="@+id/spFrom"
-        android:layout_width="116dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="288dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
