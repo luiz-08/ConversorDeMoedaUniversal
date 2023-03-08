@@ -17,8 +17,12 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import com.example.currencytoday.notification.permission
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
+
+
+
 
     private lateinit var spFrom : Spinner
     private lateinit var spTo : Spinner
